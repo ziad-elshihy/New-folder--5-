@@ -25,7 +25,15 @@ body {
 
 .logo {
    width: 135px;
-   padding-right: 30px;
+}
+
+.image {
+   width: 350px;
+   position: absolute;
+   left: 50%;
+   right: 50%;
+   transform: translate(-48%, 6%);
+   z-index: -1;
 }
 
 .main {
