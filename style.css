@@ -4,17 +4,34 @@
    font-family: 'Raleway', sans-serif;
 }
 
+:root {
+   --nunito-font: 'Nunito Sans', sans-serif;
+   --montserrat-font: 'Montserrat', sans-serif;
+   --green-color: #217443;
+   --whitesmoke-color: #f1f1f1;
+   --grey-color: #c1c1c1;
+   --dark-color: #1a1a1a;
+   --light-color: #fff;
+   --transition: all 300ms ease-in-out;
+   --gradient: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
 body {
-   height: 100%;
-   width: 100%;
-   background: #444;
+   font-family: sans-serif, Helvetica;
+   scroll-behavior: smooth;
+   height: 100vh;
+   position: relative;
+}
+
+.logo {
+   width: 135px;
+   padding-right: 30px;
 }
 
 .main {
    position: relative;
    height: 100vh;
    width: 100%;
-   color: #fff;
 }
 
 .main .slider {
@@ -34,6 +51,7 @@ body {
    overflow: hidden;
    opacity: 0;
    transition: 0.3s ease-in-out;
+   color: #fff;
 }
 
 .main .slider .slides.current {
@@ -42,7 +60,7 @@ body {
 }
 
 .main .slider .slides:nth-child(1) {
-   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('./2021_3_3_14_36_47_441.jpg');
+   background: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, 0)), url('./sustainable-development-goals-still-life.jpg');
    background-size: cover;
    background-attachment: fixed;
    background-position: center;
@@ -50,7 +68,7 @@ body {
 }
 
 .main .slider .slides:nth-child(2) {
-   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('./sustainable-development-goals-still-life.jpg');
+   background: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, 0)), url('./WhatsApp\ Image\ 2023-09-10\ at\ 12.04.30.jpg');
    background-size: cover;
    background-attachment: fixed;
    background-position: center;
@@ -58,7 +76,7 @@ body {
 }
 
 .main .slider .slides:nth-child(3) {
-   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('./rscf.png');
+   background: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, 0)), url('./WhatsApp\ Image\ 2023-09-10\ at\ 12.04.39.jpg');
    background-size: cover;
    background-attachment: fixed;
    background-position: center;
@@ -66,22 +84,12 @@ body {
 }
 
 .main .slider .slides:nth-child(4) {
-   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('https://images.pexels.com/photos/1168764/pexels-photo-1168764.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+   background: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, 0)), url('./WhatsApp\ Image\ 2023-09-10\ at\ 12.04.40.jpg');
    background-size: cover;
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
 }
-
-.main .slider .slides:nth-child(5) {
-   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('https://images.pexels.com/photos/2693529/pexels-photo-2693529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-   background-size: cover;
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-}
-
-
 
 .main .prev {
    position: fixed;
@@ -93,7 +101,7 @@ body {
    font-size: 1.5em;
    font-weight: 600;
    border: 2px solid #fff;
-   padding: 10px 17px;
+   padding: 4px 9px;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -113,7 +121,7 @@ body {
    font-size: 1.5em;
    font-weight: 600;
    border: 2px solid #fff;
-   padding: 10px 17px;
+   padding: 4px 9px;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -154,4 +162,51 @@ body {
 
 .main a:hover {
    background: #017fb5;
+}
+
+.main .slider .slides:nth-child(1) h1 {
+   color: white;
+   text-align: center;
+   align-items: center;
+}
+
+h2 {
+   font-size: 35px;
+   align-items: center;
+
+}
+
+.main .slider .slides:nth-child(2) h3 {
+   font-size: 30px;
+   width: 70%;
+   text-align: center;
+   padding-top: 90px;
+   color: black;
+}
+
+.main .slider .slides:nth-child(3) h3 {
+   line-height: 1.5;
+   padding-bottom: 80px;
+   color: black;
+   text-align: center;
+   font-size: 30px;
+   width: 70%;
+}
+
+.sub {
+   color: var(--whitesmoke-color);
+   background-color: var(--green-color);
+   text-decoration: none;
+   padding: 2px 13px;
+   border-radius: 25px;
+   font-size: 18px;
+   border: transparent solid 2px;
+   transition: .4s;
+   cursor: pointer;
+   outline: none;
+}
+
+.sub:hover {
+   background-color: var(--whitesmoke-color);
+   color: var(--green-color);
 }
